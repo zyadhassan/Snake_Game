@@ -11,3 +11,7 @@ the regular old snake gmae <br/>
 #### if the snake hit the wall , you will lose <br/>
 #### if the snake hit itself , you will lose <br/>
 #### the score will increase while eating the food as well as the snake <br/>
+
+# SnapShots
+
+![Screenshot 2022-09-01 045546](https://user-images.githubusercontent.com/85132939/187822356-423ef3a5-f856-4b87-a686-785641a5a1df.png)
