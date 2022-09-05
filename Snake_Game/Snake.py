@@ -4,7 +4,6 @@ from turtle import Turtle
 class Snake:
     def __init__(self,length):
         self.segmants=[]
-
         ############ Creating the Snack ################
         for i in range(length):
             turt = Turtle()
@@ -57,9 +56,9 @@ class Snake:
         mid_w=width/2
         mid_h=height/2
 
-        if self.head.xcor()>mid_w-20 or self.head.xcor()<-mid_w+20 :
+        if self.head.xcor()>mid_w-15 or self.head.xcor()<-mid_w+15 :
             return True
-        elif self.head.ycor() > mid_h-20 or self.head.ycor() < -mid_h+20:
+        elif self.head.ycor() > mid_h-15 or self.head.ycor() < -mid_h+15:
             return True
         else:
             return False
@@ -71,10 +70,15 @@ class Snake:
                 return True
 
         return False
-
-
-
-
+# Update V1.1
+    def reset(self):
+        for seg in self.segmants:
+            seg.setposition(650,650)
+        for i in range(3):
+            self.segmants[i].setposition(x=0 - (20 * i), y=0)
+        self.length = 3
+        self.head = self.segmants[0]
+        self.segmants=self.segmants[:3]
 
 
 
