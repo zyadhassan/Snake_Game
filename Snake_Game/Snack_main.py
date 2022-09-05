@@ -44,7 +44,7 @@ while game_is_on:
     if s1.collision_wall(width=SCREEN_W,height=SCREEN_H) or s1.collision_tail():
        # update V1.1
         s1.reset()
-        score.reset()
+        score.reset_score()
         screen.update()
         time.sleep(0.7)
 
