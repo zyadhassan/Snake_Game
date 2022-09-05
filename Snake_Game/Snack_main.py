@@ -11,7 +11,7 @@ from turtle import Screen
 screen = Screen()
 screen.setup(width=SCREEN_W, height=SCREEN_H) # Window Size 600*600
 screen.bgcolor("black")  # the background is black
-screen.title("Snake Game v1.0")  # the title of the window
+screen.title("Snake Game v1.1")  # the title of the window
 screen.tracer(0)
 
 
@@ -19,6 +19,7 @@ screen.tracer(0)
 s1=Snake(length=3)
 food=Food()
 score=ScoreBoard()
+
 
 # Screen Events
 screen.listen()
@@ -41,10 +42,11 @@ while game_is_on:
         food.change()
         score.increase()
     if s1.collision_wall(width=SCREEN_W,height=SCREEN_H) or s1.collision_tail():
-        game_is_on=False
-        score.game_over()
-
-
+       # update V1.1
+        s1.reset()
+        score.reset()
+        screen.update()
+        time.sleep(0.7)
 
 
 
