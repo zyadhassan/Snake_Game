@@ -14,4 +14,9 @@ the regular old snake gmae <br/>
 
 # SnapShots
 
-![Screenshot 2022-09-01 045546](https://user-images.githubusercontent.com/85132939/187822356-423ef3a5-f856-4b87-a686-785641a5a1df.png)
+![Screenshot 2022-09-01 045546](https://user-images.githubusercontent.com/85132939/187822356-423ef3a5-f856-4b87-a686-785641a5a1df.png)<br/>
+# Update v1.1
+The game has been updated to save the heighst score even the game is closed and run it again ( saving in .txt file )<br/>
+The game has been updated to play again every time you lose with updating the heighest score 
+
+![Screenshot 2022-09-05 023924](https://user-images.githubusercontent.com/85132939/188340077-1e85ba92-27e5-4655-9b5c-3574560a8fde.png)
